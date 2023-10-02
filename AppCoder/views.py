@@ -14,7 +14,7 @@ from .models import *
 
 def inicio(request):
 
-    return render(request, "Appcoder/inicio.html")
+    return render(request, "Appcoder/index.html")
 
 def cursos(request):
 
