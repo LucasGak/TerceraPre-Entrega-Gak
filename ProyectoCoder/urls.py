@@ -16,11 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from AppCoder.views import cursos
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cursos/', cursos),
-    path('app/', include('AppCoder.urls')),
+    path('AppCoder/', include('AppCoder.urls')),
 ]
